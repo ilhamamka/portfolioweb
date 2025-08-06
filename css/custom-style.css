@@ -712,8 +712,6 @@ h6,
 /* Achievements Section Styles */
 .achievements-section {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  border-top: 3px solid #3498db;
-  border-bottom: 3px solid #3498db;
   position: relative;
 }
 
