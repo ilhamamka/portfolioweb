@@ -5,3 +5,918 @@ NOTE:
 WRITE YOUR OWN CUSTOM CSS STYLES HERE.
 
 */
+
+/* Global Font Consistency */
+body,
+.service--content h3,
+.service--content p,
+.service--content ul li,
+.company--info h3,
+.company--info p,
+.company--info ul li,
+.team--info h4,
+.team--info p,
+.article--content h4,
+.article--content p,
+.case-study--item h4,
+.case-study--item p,
+.trend--item h5,
+.trend--item p,
+.form-control,
+.btn,
+.post-client,
+.milestone--content h4,
+.milestone--content p,
+.contact--details p {
+  font-family: "Open Sans", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Headings Font Consistency */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.section--title h2,
+.achievements-section .section--title h2,
+.industries-title,
+.highlights-title,
+.highlight--item h4,
+.counter--text {
+  font-family: "Montserrat", "Open Sans", sans-serif;
+}
+
+/* Numbers and Statistics */
+.counter--num,
+.counter--num span {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+/* Services Section Styles */
+#services {
+  background: #f8f9fa;
+  padding: 80px 0;
+}
+
+#services .section--title {
+  margin-bottom: 60px;
+}
+
+#services .section--title h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+#services .section--title p {
+  font-size: 18px;
+  color: #6c757d;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Service Items Grid */
+#services .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+#services .col-md-4 {
+  display: flex;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.service--item {
+  background: #ffffff;
+  padding: 45px 35px;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  width: 100%;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 480px;
+}
+
+.service--item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+  transform-origin: left;
+}
+
+.service--item:hover::before {
+  transform: scaleX(1);
+}
+
+.service--item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-color: rgba(243, 156, 18, 0.3);
+}
+
+.service--icon {
+  text-align: center;
+  margin-bottom: 30px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service--icon i {
+  font-size: 64px;
+  color: #f39c12;
+  transition: all 0.4s ease;
+  line-height: 1;
+}
+
+.service--item:hover .service--icon i {
+  transform: scale(1.15);
+  color: #e67e22;
+}
+
+.service--content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.service--content h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service--content p {
+  color: #6c757d;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 15px;
+  flex-grow: 0;
+}
+
+.service--content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.service--content ul li {
+  padding: 10px 0;
+  color: #495057;
+  position: relative;
+  padding-left: 30px;
+  font-size: 15px;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.service--content ul li:last-child {
+  border-bottom: none;
+}
+
+.service--content ul li:before {
+  content: "✓";
+  color: #28a745;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+  background: rgba(40, 167, 69, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.service--item:hover .service--content ul li {
+  color: #343a40;
+  padding-left: 35px;
+}
+
+.service--item:hover .service--content ul li:before {
+  background: #28a745;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Company Info Styles */
+.company--info h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.company--info h3:first-child {
+  margin-top: 0;
+}
+
+.company--info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.company--info ul li {
+  padding: 8px 0;
+  color: #34495e;
+  line-height: 1.5;
+}
+
+/* Milestones Styles */
+.milestone--item {
+  display: flex;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.milestone--year {
+  background: #f39c12;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 20px;
+  min-width: 80px;
+  text-align: center;
+}
+
+.milestone--content h4 {
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.milestone--content p {
+  color: #7f8c8d;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Team Member Styles */
+.team--member {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.team--img {
+  margin-bottom: 20px;
+}
+
+.team--img img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.team--info h4 {
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.team--position {
+  color: #f39c12;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.team--info p {
+  color: #7f8c8d;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* Article Styles */
+.article--item {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.article--item:hover {
+  transform: translateY(-3px);
+}
+
+.article--img {
+  height: 200px;
+  overflow: hidden;
+}
+
+.article--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article--content {
+  padding: 20px;
+}
+
+.article--content h4 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.article--date {
+  color: #95a5a6;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.article--content p {
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Case Study Styles */
+.case-study--item {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border-left: 4px solid #f39c12;
+}
+
+.case-study--item h4 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.case-study--client {
+  color: #f39c12;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.case-study--item p {
+  color: #34495e;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Technology Trends Styles */
+.trend--item {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.trend--item h5 {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.trend--item p {
+  color: #7f8c8d;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* Industry Item Styles */
+.industry--item {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Enhanced Contact Form Styles */
+.quick-contact .btn {
+  margin-bottom: 10px;
+}
+
+.btn--success {
+  background-color: #25d366;
+  border-color: #25d366;
+  color: white;
+}
+
+.btn--success:hover {
+  background-color: #1da851;
+  border-color: #1da851;
+}
+
+.btn--info {
+  background-color: #3498db;
+  border-color: #3498db;
+  color: white;
+}
+
+.btn--info:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+}
+
+.btn--secondary {
+  background-color: #95a5a6;
+  border-color: #95a5a6;
+  color: white;
+}
+
+.btn--secondary:hover {
+  background-color: #7f8c8d;
+  border-color: #7f8c8d;
+}
+
+/* Form Enhancements */
+.form-control:focus {
+  border-color: #f39c12;
+  box-shadow: 0 0 0 0.2rem rgba(243, 156, 18, 0.25);
+}
+
+.checkbox-inline {
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .service--item {
+    margin-bottom: 20px;
+  }
+
+  .milestone--item {
+    flex-direction: column;
+  }
+
+  .milestone--year {
+    margin-right: 0;
+    margin-bottom: 10px;
+    align-self: flex-start;
+  }
+
+  .team--member {
+    margin-bottom: 20px;
+  }
+
+  .article--item {
+    margin-bottom: 20px;
+  }
+
+  .case-study--item {
+    margin-bottom: 20px;
+  }
+}
+
+/* Animation for counters */
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.counter--item {
+  animation: countUp 0.6s ease-out;
+}
+
+/* Highlight animation for form elements */
+@keyframes highlight {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: rgba(243, 156, 18, 0.1);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.form-highlight {
+  animation: highlight 2s ease-in-out;
+}
+
+/* Portfolio Client Styles */
+.post-client {
+  color: #f39c12;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.post-client i {
+  margin-right: 8px;
+  color: #f39c12;
+}
+
+.post-client strong {
+  color: #2c3e50;
+}
+
+/* Section Padding */
+.section--padding {
+  padding: 80px 0;
+}
+
+/* Background Color */
+.bg--color {
+  background-color: #f8f9fa;
+}
+
+/* Fix for service items equal height */
+.service--item {
+  display: flex;
+  flex-direction: column;
+}
+
+.service--content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.service--content ul {
+  margin-top: auto;
+}
+
+/* Company contact details */
+.company--contact {
+  text-align: center;
+  padding: 30px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact--details p {
+  margin-bottom: 15px;
+  color: #34495e;
+  font-size: 16px;
+}
+
+.contact--details i {
+  color: #f39c12;
+  margin-right: 10px;
+  width: 20px;
+}
+
+/* Fix for milestone responsive */
+@media (max-width: 768px) {
+  .milestone--item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .milestone--year {
+    margin-right: 0;
+    margin-bottom: 15px;
+    align-self: center;
+  }
+}
+
+/* Floating WhatsApp Button Styles */
+#floating-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#floating-whatsapp a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Section spacing fixes */
+.section--padding {
+  padding: 60px 0;
+}
+
+@media (max-width: 768px) {
+  .section--padding {
+    padding: 40px 0;
+  }
+}
+
+/* Services Responsive Design */
+@media (max-width: 992px) {
+  #services .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #services {
+    padding: 60px 0;
+  }
+
+  #services .section--title h2 {
+    font-size: 32px;
+  }
+
+  #services .section--title p {
+    font-size: 16px;
+  }
+
+  #services .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .service--item {
+    min-height: auto;
+    padding: 35px 25px;
+    margin-bottom: 0;
+  }
+
+  .service--icon {
+    height: 70px;
+    margin-bottom: 25px;
+  }
+
+  .service--icon i {
+    font-size: 56px;
+  }
+
+  .service--content h3 {
+    font-size: 20px;
+    min-height: auto;
+  }
+
+  .service--content p {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .service--content ul li {
+    font-size: 14px;
+    padding: 8px 0;
+    padding-left: 25px;
+  }
+
+  .service--item:hover .service--content ul li {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service--item {
+    padding: 30px 20px;
+  }
+
+  .service--icon i {
+    font-size: 48px;
+  }
+
+  .service--content h3 {
+    font-size: 18px;
+  }
+}
+
+/* Achievements Section Styles */
+.achievements-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-top: 3px solid #3498db;
+  border-bottom: 3px solid #3498db;
+  position: relative;
+}
+
+.achievements-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%233498db" opacity="0.05"/><circle cx="75" cy="75" r="1" fill="%233498db" opacity="0.05"/><circle cx="50" cy="10" r="0.5" fill="%233498db" opacity="0.03"/><circle cx="10" cy="60" r="0.5" fill="%233498db" opacity="0.03"/><circle cx="90" cy="40" r="0.5" fill="%233498db" opacity="0.03"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  pointer-events: none;
+}
+
+.achievements-section .section--title h2 {
+  color: #2c3e50;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.achievements-section .section--title p {
+  color: #6c757d;
+  font-size: 18px;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Counter item styling */
+.counter--item {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.counter--item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.counter--num {
+  font-size: 48px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.counter--num i {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: #3498db;
+  transition: transform 0.3s ease;
+}
+
+.counter--item:hover .counter--num i {
+  transform: scale(1.2);
+}
+
+.counter--text {
+  color: #495057;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Industries Section */
+.industries-section {
+  margin-top: 60px;
+}
+
+.industries-title {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.industry--item {
+  text-align: center;
+  padding: 25px 15px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.industry--item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.industry--item i {
+  color: #3498db;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.industry--item:hover i {
+  color: #2980b9;
+}
+
+.industry--item h5 {
+  color: #2c3e50;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Highlights Section */
+.highlights-section {
+  margin-top: 60px;
+}
+
+.highlights-title {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.highlight--item {
+  text-align: center;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.highlight--item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.highlight--item i {
+  color: #3498db;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.highlight--item:hover i {
+  color: #2980b9;
+}
+
+.highlight--item h4 {
+  color: #2c3e50;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.highlight--item p {
+  color: #6c757d;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Fix for article and case study spacing */
+.article--item,
+.case-study--item {
+  height: 100%;
+}
+
+/* Ensure proper spacing between sections */
+#services,
+#company-info,
+#social-proof,
+#insights {
+  position: relative;
+}
+
+/* Fix navigation active states */
+.navbar-nav li a:hover,
+.navbar-nav li a:focus {
+  color: #f39c12 !important;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
