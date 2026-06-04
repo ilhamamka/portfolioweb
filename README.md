@@ -72,10 +72,10 @@ Welcome to my GitHub profile! I'm a passionate **Full-Stack Developer** and **So
 - **Tech Stack**: Python, Jupyter Notebook
 - **Description**: Data visualization and analysis of COVID-19 statistics
 
-### 🌐 **Portfolio Website** - Personal Showcase
-- **Repository**: [portfolioweb](https://github.com/ilhamamka/portfolioweb)
-- **Tech Stack**: PHP, CSS
-- **Description**: Personal portfolio website showcasing projects and skills
+### 🌐 **Portal Link Aggregator** - Multi-Link Portal
+- **Repository**: [ikanbakardaun](https://github.com/ilhamamka/ikanbakardaun)
+- **Tech Stack**: HTML, CSS, JavaScript
+- **Description**: Portal to combine and organize several useful links
 
 ---
 
@@ -87,6 +87,7 @@ Welcome to my GitHub profile! I'm a passionate **Full-Stack Developer** and **So
 ✅ Designed and implemented RESTful APIs  
 ✅ Specialized in ERP and business management systems  
 ✅ Strong expertise in both Android (Kotlin) and web development  
+✅ 1,100+ contributions in the last year  
 
 ---
 
@@ -102,37 +103,70 @@ Welcome to my GitHub profile! I'm a passionate **Full-Stack Developer** and **So
 
 ---
 
+## 🛠️ Tech Stack Overview
+
+```
+Frontend:     JavaScript • React • React Native • HTML5 • CSS3 • Adobe XD
+Backend:      PHP • Laravel • Node.js • RESTful APIs
+Mobile:       Kotlin • Android • React Native
+Database:     SQL • Database Design
+Tools:        Git • GitHub • VS Code • Android Studio
+Other:        Python • Jupyter • SharePoint Framework
+```
+
+---
+
 ## 🔗 Let's Connect
 
 I'm always interested in collaborating on innovative projects and discussing new ideas in software development. Feel free to reach out!
 
 - 💼 **GitHub**: [@ilhamamka](https://github.com/ilhamamka)
-- 📧 **Email**: Get in touch through my GitHub profile
-- 🌐 **Portfolio**: Check out my projects and work
+- 📧 **Email**: ilhamfadhillahamka1@gmail.com
+- 🌐 **Portfolio**: [ilhamamka.github.io](https://ilhamamka.github.io)
+- 👥 **Followers**: 5 | **Following**: 8
 
 ---
 
-## 📚 Learning & Development
+## 📚 Currently Learning & Exploring
 
-I'm continuously expanding my knowledge and skills in:
-- Modern web frameworks and technologies
-- Cloud infrastructure and DevOps
-- Software architecture and design patterns
-- Full-stack development best practices
-- Mobile app development optimization
+- 🚀 Modern web frameworks and technologies
+- ☁️ Cloud infrastructure and DevOps
+- 🏗️ Software architecture and design patterns
+- ⚡ Full-stack development best practices
+- 📱 Mobile app development optimization
+- 🤖 AI/ML integration in applications
 
 ---
 
-## 📝 License
+## 💬 My Development Philosophy
 
-Most of my projects are open source. Please refer to individual repositories for specific license information.
+> *"Code is not just about making things work—it's about making them work beautifully, efficiently, and sustainably."*
+
+I believe in:
+- Writing clean, maintainable code
+- Following SOLID principles and best practices
+- Continuous learning and adaptation
+- Collaboration and knowledge sharing
+- Creating solutions that make a real difference
+
+---
+
+## ⭐ Support My Work
+
+If you find my projects helpful or my code useful, please consider:
+- ⭐ Starring my repositories
+- 🔄 Sharing them with others
+- 💬 Providing feedback and suggestions
+- 🤝 Contributing to my open-source projects
 
 ---
 
 <div align="center">
 
-### ⭐ If you find my projects helpful, please consider giving them a star!
+### 🌟 Thanks for visiting my profile! 🌟
 
-Made with ❤️ by **Ilham Amka**
+**Made with ❤️ by Ilham Amka**
+
+*"Keep learning, keep coding, keep growing!"*
 
 </div>
