@@ -138,18 +138,6 @@ I'm always interested in collaborating on innovative projects and discussing new
 
 ---
 
-## 📝 Repository Highlights
-
-| Repository | Language | Description | Status |
-|-----------|----------|-------------|--------|
-| [advancedplanning](https://github.com/ilhamamka/advancedplanning) | JavaScript | SharePoint Framework customization | Active |
-| [erp-resto](https://github.com/ilhamamka/erp-resto) | PHP/Laravel | Restaurant ERP system | In Development |
-| [MOV_Apps](https://github.com/ilhamamka/MOV_Apps) | Kotlin | Cinema ticketing app | Complete |
-| [krowdcap-mySadaqah](https://github.com/ilhamamka/krowdcap-mySadaqah) | JavaScript | Crowdfunding mobile app | Complete |
-| [covid19visualization](https://github.com/ilhamamka/covid19visualization) | Python | COVID-19 data analysis | Complete |
-
----
-
 ## 💬 My Development Philosophy
 
 > *"Code is not just about making things work—it's about making them work beautifully, efficiently, and sustainably."*
